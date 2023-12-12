@@ -37,9 +37,10 @@ namespace DESIGNER
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblClaveAcceso = new System.Windows.Forms.Label();
-            this.gboxLogin = new System.Windows.Forms.GroupBox();
+            this.btAcercaDe = new System.Windows.Forms.GroupBox();
             this.errorLogin = new System.Windows.Forms.ErrorProvider(this.components);
-            this.gboxLogin.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btAcercaDe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorLogin)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,36 +111,47 @@ namespace DESIGNER
             this.lblClaveAcceso.TabIndex = 0;
             this.lblClaveAcceso.Text = "Clave de acceso";
             // 
-            // gboxLogin
+            // btAcercaDe
             // 
-            this.gboxLogin.Controls.Add(this.lblTitulo);
-            this.gboxLogin.Controls.Add(this.btnFinalizar);
-            this.gboxLogin.Controls.Add(this.lblClaveAcceso);
-            this.gboxLogin.Controls.Add(this.btnIniciar);
-            this.gboxLogin.Controls.Add(this.lblEmail);
-            this.gboxLogin.Controls.Add(this.txtClaveAcceso);
-            this.gboxLogin.Controls.Add(this.txtEmail);
-            this.gboxLogin.Location = new System.Drawing.Point(22, 12);
-            this.gboxLogin.Name = "gboxLogin";
-            this.gboxLogin.Size = new System.Drawing.Size(361, 392);
-            this.gboxLogin.TabIndex = 0;
-            this.gboxLogin.TabStop = false;
+            this.btAcercaDe.Controls.Add(this.button1);
+            this.btAcercaDe.Controls.Add(this.lblTitulo);
+            this.btAcercaDe.Controls.Add(this.btnFinalizar);
+            this.btAcercaDe.Controls.Add(this.lblClaveAcceso);
+            this.btAcercaDe.Controls.Add(this.btnIniciar);
+            this.btAcercaDe.Controls.Add(this.lblEmail);
+            this.btAcercaDe.Controls.Add(this.txtClaveAcceso);
+            this.btAcercaDe.Controls.Add(this.txtEmail);
+            this.btAcercaDe.Location = new System.Drawing.Point(22, 12);
+            this.btAcercaDe.Name = "btAcercaDe";
+            this.btAcercaDe.Size = new System.Drawing.Size(361, 392);
+            this.btAcercaDe.TabIndex = 0;
+            this.btAcercaDe.TabStop = false;
             // 
             // errorLogin
             // 
             this.errorLogin.ContainerControl = this;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(21, 347);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(278, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "ACERCA DE";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 427);
-            this.Controls.Add(this.gboxLogin);
+            this.Controls.Add(this.btAcercaDe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "frmLogin";
-            this.gboxLogin.ResumeLayout(false);
-            this.gboxLogin.PerformLayout();
+            this.btAcercaDe.ResumeLayout(false);
+            this.btAcercaDe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorLogin)).EndInit();
             this.ResumeLayout(false);
 
@@ -154,7 +166,8 @@ namespace DESIGNER
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblClaveAcceso;
-        private System.Windows.Forms.GroupBox gboxLogin;
+        private System.Windows.Forms.GroupBox btAcercaDe;
         private System.Windows.Forms.ErrorProvider errorLogin;
+        private System.Windows.Forms.Button button1;
     }
 }
